@@ -15,9 +15,9 @@ import io.cucumber.java.en.When;
 public class LoginSteps {
 
 	WebDriver driver = null;
-	
-	//LoginPages login = new LoginPages(driver);
 	LoginPages login;
+	//LoginPages login = new LoginPages(driver);
+	
 
 	@Given("user abre o browser")
 	public void user_abre_o_browser() {

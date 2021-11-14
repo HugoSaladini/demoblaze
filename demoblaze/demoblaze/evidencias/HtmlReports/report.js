@@ -1,4 +1,70 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/GoogleSearch.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/AdicionaProduto.feature");
+formatter.feature({
+  "name": "Teste adiciona produto",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "User adiciona produto ao carrinho",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@T002"
+    }
+  ]
+});
+formatter.step({
+  "name": "abre a pagina",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "StepDefinitions.AddprodutoSteps.abre_a_pagina()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user realiza o login",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.AddprodutoSteps.user_realiza_o_login()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user seleciona o produto",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefinitions.AddprodutoSteps.user_seleciona_o_produto()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clica em add produto",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefinitions.AddprodutoSteps.user_clica_em_add_produto()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user valida produto popup de produto adicionado",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefinitions.AddprodutoSteps.user_valida_produto_popup_de_produto_adicionado()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/Features/GoogleSearch.feature");
 formatter.feature({
   "name": "Teste pesquisa no google",
   "description": "",
@@ -68,7 +134,12 @@ formatter.feature({
 formatter.scenario({
   "name": "Realiza login",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@T001"
+    }
+  ]
 });
 formatter.step({
   "name": "user abre o browser",
