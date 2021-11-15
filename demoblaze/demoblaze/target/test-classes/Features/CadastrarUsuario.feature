@@ -1,5 +1,6 @@
 Feature: Teste cadastrar usuario
 
+  @T004
   Scenario: Realiza cadastro de novo ususario
     Given abre a pagina inicial
     And clica em signup

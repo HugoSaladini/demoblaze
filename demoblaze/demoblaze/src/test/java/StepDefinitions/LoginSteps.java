@@ -16,8 +16,6 @@ public class LoginSteps {
 
 	WebDriver driver = null;
 	LoginPages login;
-	//LoginPages login = new LoginPages(driver);
-	
 
 	@Given("user abre o browser")
 	public void user_abre_o_browser() {
@@ -33,7 +31,6 @@ public class LoginSteps {
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 
 		driver.navigate().to("https://www.demoblaze.com/index.html");
-
 	}
 
 	@And("user clica em Login")
@@ -45,7 +42,6 @@ public class LoginSteps {
 
 		driver.findElement(By.id("login2")).click();
 		Thread.sleep(2000);
-
 	}
 
 	@When("user preenche campo de username e password")
@@ -54,10 +50,6 @@ public class LoginSteps {
 		
 		login.enterUsername();
 		login.enterPassword();
-
-		//driver.findElement(By.id("loginusername")).sendKeys("saladini");
-		//driver.findElement(By.id("loginpassword")).sendKeys("0123");
-
 		Thread.sleep(1500);
 	}
 
@@ -66,8 +58,6 @@ public class LoginSteps {
 		System.out.println("Passo - clica no botao de login");
 		
 		login.clickLogin();
-		
-		//driver.findElement(By.xpath("//*[@id=\"logInModal\"]/div/div/div[3]/button[2]")).click();
 		Thread.sleep(1500);
 
 	}
@@ -75,11 +65,8 @@ public class LoginSteps {
 	@Then("valida campo de usuario ativo")
 	public void valida_campo_de_usuario_ativo() {
 		System.out.println("Passo - elemento esperado encontrado");
-
 		
 		login.validLogin();
-		
-		//driver.getPageSource().contains("Welcome saladini");
 		driver.close();
 		driver.quit();
 

@@ -37,7 +37,6 @@ public class CadastrarUsuarioSteps {
 	@And("clica em signup")
 	public void clica_em_signup() throws InterruptedException {
 		
-		
 		cadastrar = new CadastrarUsuarioPages(driver);
 		
 		System.out.println("Passo - clica em Cadastrar");
@@ -78,7 +77,6 @@ public class CadastrarUsuarioSteps {
 		
 		driver.close();
 		driver.quit();
-		
 	}
 
 	

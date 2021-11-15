@@ -4,13 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPages {
-	
+
 	WebDriver driver;
-	
+
 	By txt_username = By.id("loginusername");
 	By txt_password = By.id("loginpassword");
 	By btn_login = By.xpath("//*[@id=\"logInModal\"]/div/div/div[3]/button[2]");
-	
+
 	public LoginPages(WebDriver driver) {
 
 		this.driver = driver;
